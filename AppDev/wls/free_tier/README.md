@@ -93,12 +93,13 @@ $ cat mykey.pub
 
 ---
 
-# 5. Clone this git repository in you CloudShell window to access the terraform scripts
+# 5. Download the terraform configuration files from this git repository
 
+In your Cloud Shell window, type / paste the following comand:
 
 ```
 
-git clone https://github.com/oracle/cloudtestdrive/tree/master/AppDev/wls/free_tier
+bash <(curl -s https://raw.githubusercontent.com/oracle/cloudtestdrive/master/AppDev/wls/free_tier/terraform/download.sh)
 
 ```
 
@@ -107,7 +108,7 @@ git clone https://github.com/oracle/cloudtestdrive/tree/master/AppDev/wls/free_t
 1. Copy the terraform configuration variables example file
 
 ```
-$ cd ~/WebLogic-Cloud-Workshop/terraform
+$ cd ~/WebLogic-Cloud-Workshop
 
 $ cp terraform.tfvars.example terraform.tfvars
 ```
